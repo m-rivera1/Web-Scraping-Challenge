@@ -30,7 +30,7 @@
          <div class="col-md-8">
            <h3 class="heading">Featured Mars Image</h3>
            <img src={{mars_data.reatrued_image_url}}
-         </div>
+        </div>
 
          <div clas = "row">
            <div class="col-md-12"
@@ -38,17 +38,28 @@
               <div class="table-body">
                 <h4>Mars Facts</h4>
                 <p>{{mars_data.mars_facts</p>
-
               </div>
-         </div>
-
-          
-
-       </div>
-  
+            </div>
+           </div>
+          </div>
     </div>
-
   </div>
+  
+      <!-- Mars Hemispheres Section -->
+    <div class='row'
+      <h2 class="text-center">Mars Hemispheres</h2>
+    </div>
+    {% for hemsphere in mars_data.hemisphere_image_urls %}
+      <div class="col-md-6">
+        <div clas="thumnail">
+          <img src="{{hemisphere.img_url}}">
+        <div class="caption">
+          <h3>{{hemisphere.title}}</h3>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+ 
 </body>
 
 </html>

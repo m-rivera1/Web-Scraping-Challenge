@@ -10,7 +10,7 @@ def init_browser():
     executable_path = {"executable_path": "C:/Users/mike1/OneDrive/Desktop/WebDriver/chromedriver.exe"}
     return Browser("chrome", **executable_path, headless=False)
 
-def scrape_info():
+def scrape():
    browser = init_browser()
    
    #NASA Mars News -  Scrape and collect the latest News Title and Paragraph Text

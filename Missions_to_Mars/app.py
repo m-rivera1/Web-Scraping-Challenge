@@ -13,7 +13,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/mars_data")
 
 # Route to render index.html template using data from Mongo
 @app.route("/")
-def home():
+def home(): 
 
     # Find one record of data from the mongo database
     mars_data = mongo.db.collection.find_one()
