@@ -7,7 +7,7 @@ from selenium import webdriver
 import time
 
 def init_browser():
-    executable_path = {"executable_path": "C:/Users/mike1/OneDrive/Desktop/WebDriver/chromedriver.exe"}
+    executable_path = {"executable_path": "C:../Missions_to_Mars/chromedriver.exe"}
     return Browser("chrome", **executable_path, headless=False)
 
 def scrape():
@@ -116,7 +116,4 @@ def scrape():
 
    # Return results
    return mars_data
-
-
-    
 
